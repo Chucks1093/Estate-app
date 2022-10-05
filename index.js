@@ -145,7 +145,7 @@ barba.init({
                     namespace : ["agent-page"]
                },
                once({next}){
-                    animationOnce(next.container.children[0])
+                    // animationOnce(next.container.children[0])
                     populateAgentPage(homes_categories)
                     populateAgentListings(homes_categories)
                },

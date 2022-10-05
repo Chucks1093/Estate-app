@@ -7,3 +7,4 @@ tailwind-full.config.js
 home/images
 home/people
 remixicon
+./dist
