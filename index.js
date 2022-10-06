@@ -20,7 +20,8 @@ function animationOnce(cover){
      tl
           .from(logo, {yPercent: 200, duration: 2.3, ease:"Expo.easeInOut" } )
           .from(word, {autoAlpha: 0, duration: 2.3}, "+=.2")
-          .to(cover, { clipPath: "inset(0 100% 0 0)" , duration:.7, ease:"power4.out"}, "+=3")
+          .to(word, {autoAlpha:0, duration:1, delay:3})
+          .to(cover, { clipPath: "inset(0 100% 0 0)" , duration:.7, ease:"power4.out"})
           .from(homeLogo, {yPercent:100, duration:1})
           
           .set(logo, {autoAlpha:0}, "+=1")
@@ -38,7 +39,8 @@ function animationOnceImage(cover){
      tl
           .from(logo, {yPercent: 200, duration: 2.3, ease:"Expo.easeInOut" } )
           .from(word, {autoAlpha: 0, duration: 2.3}, "+=.2")
-          .to(pageCover, { clipPath: "inset(0 100% 0 0)" , duration:.7, ease:"power4.out"}, "+=3")
+          .to(word, {autoAlpha:0, duration:1, delay:2})
+          .to(pageCover, { clipPath: "inset(0 100% 0 0)" , duration:.7, ease:"power4.out"})
           .from(image, {scale:1.5, duration:1.8, ease: "power3.out"}, "-=0.8")
           .set(logo, {autoAlpha:0}, "+=1")
           .set(word, {autoAlpha: 0})
@@ -55,7 +57,8 @@ function animationEnterImage(cover){
      tl
           .from(logo, {yPercent: 100, duration: 1.3, ease:"Expo.easeInOut" })
           .from(word, {autoAlpha: 0, duration: 1.3}, "+=.2")
-          .to(pageCover, { clipPath: "inset(0 0 0 100%)" , duration:.7, ease:"Expo.easeInOut"}, "+=2")
+          .to(word, {autoAlpha:0, duration:1, delay:2})
+          .to(pageCover, { clipPath: "inset(0 0 0 100%)" , duration:.7, ease:"Expo.easeInOut"})
           .from(image, {scale:1.5, duration:1.8, ease: "power3.out"}, "-=0.8")
           .set(logo, {autoAlpha:0}, "+=1")
           .set(word, {autoAlpha: 0})
@@ -69,7 +72,8 @@ function animationEnter(cover){
      tl
           .from(logo, {yPercent: 100, duration: 1.3, ease:"Expo.easeInOut" } )
           .from(word, {autoAlpha: 0, duration: 1.3}, "+=.2")
-          .to(cover, { clipPath: "inset(0 0 0 100%)" , duration:.7, ease:"Expo.easeInOut"}, "+=2")
+          .to(word, {autoAlpha:0, duration:1, delay:2})
+          .to(cover, { clipPath: "inset(0 0 0 100%)" , duration:.7, ease:"Expo.easeInOut"})
           .set(logo, {autoAlpha:0}, "+=1")
           .set(word, {autoAlpha: 0})
      return tl
@@ -145,7 +149,7 @@ barba.init({
                     namespace : ["agent-page"]
                },
                once({next}){
-                    // animationOnce(next.container.children[0])
+                    animationOnce(next.container.children[0])
                     populateAgentPage(homes_categories)
                     populateAgentListings(homes_categories)
                },

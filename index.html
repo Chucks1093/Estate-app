@@ -18,7 +18,7 @@
      }
 </style>
 <body data-barba="wrapper"  class="relative  mx-auto my-0 bg-gray-100 all:border-box ">
-     <div data-barba="container" data-barba-namespace="home-page">
+     <div data-barba="container" data-barba-namespace="home-page" class="sm:hidden">
           <div id="cover-page" class="home  w-full bg-gray-700 h-screen top-0 z-10 flex mt-0 justify-center items-center flex-col fixed">
                <div class="absolute flex justify-center items-center h-[fit] w-[100%] overflow-hidden top-[12%]">
                     <img id="logo-cover" class=" h-[1.7rem] w-[fit] object-contain transform   select-none " src="./static/logo-cover.svg" alt="">
@@ -29,9 +29,9 @@
           <div id="profile-cover" class=" w-full bg-gray-500 bg-opacity-30 h-[107vh] bottom-0 z-[-20] opacity-0 flex mt-0 justify-center items-center  flex-col fixed "></div>
           <div id="profile-details" class="home bg-[#fdfdf8] h-[50vh] bottom-0 w-full z-30 fixed tranform translate-y-[100%] rounded-t-[.8rem] p-[.4rem]  ">
                <div class="bg-[#f97794] h-[10vh]  rounded-t-xl flex justify-around items-center">
-                    <span class=" bg-white grid place-items-center h-[2.4rem] rounded-full shadow-3xl w-[2.4rem] "><img class="h-[55%]" src="./static\/javascript.svg" alt=""></span>
+                    <span class=" bg-white grid place-items-center h-[2.4rem] rounded-full shadow-3xl w-[2.4rem] "><img class="h-[55%]" src="./static/javascript.svg" alt=""></span>
                     <span class=" bg-white grid place-items-center h-[2.4rem] rounded-full w-[2.4rem] shadow-3xl "><img class="h-[60%]" src="./static/tailwindcss-icon-svgrepo-com.svg" alt=""></span>
-                    <span class=" bg-white grid place-items-center h-[2.4rem] rounded-full w-[2.4rem] shadow-3xl "><img class="h-[60%]" src="./static/webpack-svgrepo-com.svg" alt=""></span>
+                    <span class=" bg-white grid place-items-center h-[2.4rem] rounded-full w-[2.4rem] shadow-3xl "><img class="h-[60%]" src="./static/parcel-icon-svgrepo-com.svg" alt=""></span>
                     <span class=" bg-white grid place-items-center h-[2.4rem] rounded-full w-[2.4rem] shadow-3xl "><img class="h-[60%]" src="./static/html-svgrepo-com.svg" alt=""></span>
                </div>
                <p class="px-[1.5rem] leading-6 mt-[1.3rem] text-gray-500 text-[.85rem]">Hey there, I am a web developer and I built this Real Estate Application to solidify my understanding of Vanilla javascript and the tailwind CSS framework . I hope you have a great experience as you interact with it !</p>
@@ -65,8 +65,8 @@
                               <img class="w-full trasition-all duration-[2s] bg-[#f97794] h-full object-cover  object-center rounded-md" src="./static/loader.svg" alt="agent" />
                          </a>
                          <div class="absolute rounded-md  backdrop-blur-md bg-black/10 shadow-2xl text-white left-1/2 transfrom translate-x-[-50%] bottom-1/2   font-[500] rounded-md text-center  h-fit  w-fit py-[.6rem]  px-6 flex justify-center flex-col">
-                              <p class=" tracking-wider text-[.7rem]">Price</p>
-                              <p id="price" class=" text-[.8rem] "></p>
+                              <p class=" tracking-wider text-[.55rem]">Price</p>
+                              <p id="price" class=" text-[.8rem] font-[600] "></p>
                          </div>
                     </div>
                     <div class=" mt-3">
@@ -94,8 +94,8 @@
                               <img class="w-full h-full trasition-all duration-[2s] bg-[#f97794] object-cover object-center rounded-md" src="./static/loader.svg" alt="agent" />
                          </a>
                          <div class="absolute rounded-md  backdrop-blur-md bg-black/10 shadow-2xl text-white left-1/2 transfrom translate-x-[-50%] bottom-1/2   font-[500] rounded-md text-center  h-fit  w-fit py-[.6rem]  px-6 flex justify-center flex-col">
-                              <p class=" tracking-wider text-[.7rem]">Price</p>
-                              <p id="price" class=" text-[.8rem] "></p>
+                              <p class=" tracking-wider text-[.55rem]">Price</p>
+                              <p id="price" class=" text-[.8rem] font-[600] "></p>
                          </div>
                     </div>
                     <div class=" mt-3">
@@ -123,8 +123,8 @@
                               <img class="w-full h-full object-cover object-center trasition-all duration-[2s] bg-[#f97794] rounded-md" src="./static/loader.svg" alt="agent" />
                          </a>
                          <div class="absolute rounded-md  backdrop-blur-md bg-black/10 shadow-2xl text-white left-1/2 transfrom translate-x-[-50%] bottom-1/2   font-[500] rounded-md text-center  h-fit  w-fit py-[.6rem] px-6 flex justify-center flex-col">
-                              <p class=" tracking-wider text-[.7rem]">Price</p>
-                              <p id="price" class=" text-[.8rem] "></p>
+                              <p class=" tracking-wider text-[.55rem]">Price</p>
+                              <p id="price" class=" text-[.8rem] font-[600] "></p>
                          </div>
                     </div>
                     <div class=" mt-3">
@@ -152,8 +152,8 @@
                               <img class="w-full h-full object-cover object-center rounded-md trasition-all duration-[2s] bg-[#f97794]" src="./static/loader.svg" alt="agent" />
                          </a>
                          <div class="absolute rounded-md  backdrop-blur-md bg-black/10 shadow-2xl text-white left-1/2 transfrom translate-x-[-50%] bottom-1/2   font-[500] rounded-md text-center  h-fit  w-fit py-[.6rem]  px-6 flex justify-center flex-col">
-                              <p class=" tracking-wider text-[.7rem]">Price</p>
-                              <p id="price" class=" text-[.8rem] "></p>
+                              <p class=" tracking-wider text-[.55rem]">Price</p>
+                              <p id="price" class=" text-[.8rem] font-[600] "></p>
                          </div>
                     </div>
                     <div class=" mt-3">
@@ -181,8 +181,8 @@
                               <img class="w-full h-full object-cover object-center rounded-md trasition-all duration-[2s] bg-[#f97794]" src="./static/loader.svg" alt="agent" />
                          </a>
                          <div class="absolute rounded-md  backdrop-blur-md bg-black/10 shadow-2xl text-white left-1/2 transfrom translate-x-[-50%] bottom-1/2   font-[500] rounded-md text-center  h-fit  w-fit py-[.6rem] px-6 flex justify-center flex-col">
-                              <p class=" tracking-wider text-[.7rem]">Price</p>
-                              <p id="price" class=" text-[.8rem] "></p>
+                              <p class=" tracking-wider text-[.55rem]">Price</p>
+                              <p id="price" class=" text-[.8rem] font-[600] "></p>
                          </div>
                     </div>
                     <div class=" mt-3">
@@ -214,7 +214,7 @@
                <div id="near-by-container" class="child:mt-6 child:w-[87%] child:h-[10.5rem] child:mx-auto child:p-2 child:rounded-md content-box pt-1 pb-3">
                  <div id="nearby-card" class="bg-white flex justify-between items-center h-36 p-1 shadow-xl relative ">
                     <div class="w-[8.5rem]  h-full">
-                         <img id="house-image" class="block rounded-md mr-4 w-full h-full object-cover shadow-md" src="./static/agent-1-2.jpg" alt="">
+                         <img id="house-image" class="block rounded-md mr-4 w-full h-full object-cover bg-[#f97794] shadow-md" src="./static/loader.svg" alt="">
                     </div>
                     <div class="mr-auto child: ml-5 h-full pt-1 " >
                          <h2 id="house_name" class="text-[.8rem] ml-[.1rem] font-bold text-gray-500 mb-2 ">Aurora House</h2>
@@ -267,14 +267,16 @@
           </section>
           <footer class="m-0 p-0">
                <div class="flex justify-between mt-6  px-6 py-3 bg-gray-400 text-gray-100 items-center ">
-                    <i title="Dev Community" class="ri-facebook-fill cursor-pointer "></i>
-                    <i title="Github"  class="ri-github-fill cursor-pointer"></i>
-                    <i title="Twitter" class="ri-twitter-fill cursor-pointer"></i>
-                    <i title="Linkedin" class="ri-linkedin-fill cursor-pointer"></i>
+                    <a href="http://wa.me/+2349030018605"><i title="Whatsapp"  class="ri-whatsapp-line cursor-pointer "></i></a>
+                    <a href="https://github.com/Chucks1093"><i title="Github"  class="ri-github-fill cursor-pointer"></i></a>
+                    <a href="https://twitter.com/chucks1093"><i title="Twitter" class="ri-twitter-fill cursor-pointer"></i></a>
+                    <a href="https://www.linkedin.com/in/sebastian-anioke-305975234/"><i title="Linkedin" class="ri-linkedin-fill cursor-pointer"></i></a>
+                    
                </div>
                <!-- <p class="text-center text-[.6em] text-semibold text-gray-400 "> © <span>2022</span></p> -->
           </footer>    
      </div>
+     <p class=" hidden sm:block text-gray-500 text-center text-[3rem] font-bold mt-[8rem] "> I am still working on it.</p>
      <script type="module" src="index.js"></script>
 
 </body>

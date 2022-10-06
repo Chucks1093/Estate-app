@@ -12,7 +12,7 @@ function populateCard(info) {
           const bedNo = item.querySelector('#room_no');
           const landSize = item.querySelector('#house_size');
           name.textContent = info[index].agent_listings[z].house_name;
-          price.textContent = info[index].agent_listings[z].house_price;
+          price.textContent = `$${info[index].agent_listings[z].house_price}`;
           img.setAttribute("src", `${info[index].agent_listings[z].house_image}.jpg`)
           landSize.textContent = `${info[index].agent_listings[z].house_land_size}`;
           powerTime.textContent = info[index].agent_listings[z].light_time;

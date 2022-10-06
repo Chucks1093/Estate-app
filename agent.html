@@ -20,7 +20,7 @@
      }
 </style>
 <body data-barba="wrapper" class="relative  mx-auto bg-gray-100">
-     <div data-barba="container" data-barba-namespace="agent-page">
+     <div data-barba="container" data-barba-namespace="agent-page" class="sm:hidden">
           <div id="cover-page" class="home w-full bg-gray-700 h-screen top-0 z-10 flex mt-0 justify-center items-center flex-col fixed z-20 ">
                <div class="absolute flex justify-center items-center h-[fit] w-[100%] overflow-hidden top-[12%]">
                     <img id="logo-cover" class=" h-[1.7rem] w-[fit] object-contain transform   select-none " src="./static/logo-cover.svg" alt="">
@@ -28,10 +28,11 @@
                <p id="quote" class="text-white w-[72%] leading-6 text-center tracking-wider text-[3rem] font-bold select-none absolute top-[29%] ">Agent.</p>
                <img class="h-fit w-[9%]  absolute bottom-[19%] object-contain" src="./static/rolling.svg" alt="">
           </div>
-          <header class="flex px-2 justify-between items-center h-12 w-full mt-3.5 ">
-               <a href="./home_info.html"><button class="w-8 h-8 flex justify-center items-center text-center bg-white rounded-md p-[.83rem] shadow-xl  "><i class="font-extrabold ri-arrow-left-s-line text-gray-700 "></i></button></a>
-               <h2 class="font-bold text-gray-700 text-[.9rem] ">Agent Profile</h2>
-               <button class="w-8 h-8 flex justify-center items-center text-center bg-white rounded-md p-[.83rem] shadow-xl  "><i class="font-extrabold ri-more-fill text-gray-700 "></i></button>
+          <header class="flex px-2 justify-between items-center h-12 w-full mt-3.5 mb-[2.2rem] ">
+               <a href="./home_info.html"><button class="w-[2.7rem] h-[2.7rem] flex justify-center  items-center text-center bg-white rounded-[.8rem]  shadow-md mt-3.5 "><i class="ri-arrow-left-s-line text-gray-500 text-[1.4rem] "></i></button></a>
+               <h2 class="font-bold text-gray-500 text-[1.3rem] mt-3.5 ">Agent Profile</h2>
+               
+               <button class="w-[2.7rem] h-[2.7rem] flex justify-center  items-center text-center bg-white rounded-[.8rem]  shadow-md mt-3.5 "><i class="ri-more-fill text-gray-500 text-[1.4rem] "></i></button>
           </header>
           <main class="mt-4">
                <div class="w-[85%] py-4 rounded-md mx-auto bg-white shadow-md px-5 ">
@@ -57,15 +58,15 @@
                          <h3 class="text-[.8rem] ml-[.1rem] font-bold text-gray-600 mb-2 ">About Me</h3>
                          <p id="agent-description" class="text-[.68rem] text-gray-400 overflow-hidden " >Lorem ipsum doLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id, sunt rerum inventore rem velit quidem quibusdam dolore quas autem blanditiis alias tempore magnam architecto! Natus voluptates, nulla aliquid vero nostrum necessitatibus qui. Excepturi ad libero laboriosam adipisci nihil, molestiae cum necessitatibus laudantium suscipit! Perferendis quibusdam dolor voluptas dignissimos sapiente.</p>
                     </div>
-                    <button class="bg-gradient-to-r from-[#f97794] to-[#d939cd] w-32 h-8 rounded-md font-[500] text-white/90 text-[.8rem] mx-auto block mt-5 mb-3" >Ask A Question</button>
+                    <button class="bg-gradient-to-r from-[#f97794] to-[#d939cd] w-32 h-[2.7rem] rounded-md font-[500] text-white/90 text-[.7rem] mx-auto block mt-5 mb-3" >Ask A Question</button>
                </div>
                <div class=" mt-[2rem]">
                     <div class="flex justify-between mt-3 px-4 items-center">
                          <p class="text-gray-600 font-bold text-[1rem]">Agent Listings</p>
                          <p class="text-gray-700 text-[0.8rem]">See All</p>
                     </div>
-                    <div id="housing_container" class="child:mt-6 child:w-[85%] child:mx-auto child:p-2 child:rounded-md content-box pt-2 pb-4 ">
-                         <div id="agent-profile-item" class=" bg-white flex justify-between items-center h-36 p-1 shadow-xl">
+                    <div id="housing_container" class="child:mt-6 child:w-[85%] child:w-[87%] child:h-[10.5rem] child:mx-auto child:p-2 child:rounded-md content-box child:relative pt-2 pb-4 ">
+                         <!-- <div id="agent-profile-item" class=" bg-white flex justify-between items-center h-36 p-1 shadow-xl">
                               <div class="w-[8rem]  h-full">
                                    <img id="agent-listing-image" class="block rounded-md  w-full h-full object-cover shadow-md" src="./static/agent-2-2.jpg" alt="">
                               </div>
@@ -80,13 +81,64 @@
                                         <p id="agent-listing-location" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Washinton DC, USA</p>
                                    </div>
                                    <a href="./home_info.html" id="agent-listing-btn" class="text-[.58rem]  font-[600] text-white/90 px-[.46rem] py-[.2rem] bg-gray-300 shadow-md rounded-md w-[5rem] ">Get Now   📬</a>
+                              </div>
+                         </div> -->
+                         <!-- <div id="agent-profile-item" class=" bg-white flex justify-between items-center h-36 p-1 shadow-xl">
+                              <div class="w-[8rem]  h-full">
+                                   <img id="agent-listing-image" class="block rounded-md  w-full h-full object-cover shadow-md" src="./static/agent-2-2.jpg" alt="">
+                              </div>
+                              <div class="mr-auto child: ml-7 h-full pt-1 " >
+                                   <h2 id="agent-listing-house-name" class="text-[.8rem] ml-[.1rem] font-bold text-gray-500 mb-2 ">Aurora House</h2>
+                                   <div class="flex w-fit items-center">
+                                        <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-user-line"></i></span>
+                                        <p id="agent-listing-name" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Austin Fammer</p>
+                                   </div>
+                                   <div class="flex w-fit items-center mb-2.5 ">
+                                        <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-map-pin-line"></i></span>
+                                        <p id="agent-listing-location" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Washinton DC, USA</p>
+                                   </div>
+                                   <a href="./home_info.html" id="agent-listing-btn" class="text-[.58rem]  font-[600] text-white/90 px-[.46rem] py-[.2rem] bg-gray-300 shadow-md rounded-md w-[5rem] ">Get Now   📬</a>
+                              </div>
+                         </div> -->
+                         <!-- <div id="nearby-card" class="bg-white flex justify-between items-center h-36 p-1 shadow-xl relative ">
+                              <div class="w-[8.5rem]  h-full">
+                                   <img id="house-image" class="block rounded-md mr-4 w-full h-full object-cover bg-[#f97794] shadow-md" src="./static/loader.svg" alt="">
+                              </div>
+                              <div class="mr-auto child: ml-5 h-full pt-1 " >
+                                   <h2 id="house_name" class="text-[.8rem] ml-[.1rem] font-bold text-gray-500 mb-2 ">Aurora House</h2>
+                                   <div class="flex w-fit items-center">
+                                        <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-user-line"></i></span>
+                                        <p id="house_agent" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Austin Fammer</p>
+                                   </div>
+                                   <div class="flex w-fit items-center mb-2.5 ">
+                                        <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-map-pin-line"></i></span>
+                                        <p id="house_location" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Washinton DC, USA</p>
+                                   </div>
+                                   <a href="./home_info.html" id="enter" class="text-[.8rem] grid items-center text-center font-[600] text-white/90 bg-gray-300 shadow-md rounded-[.5rem] w-[6rem] h-[2.05rem] absolute bottom-[13%] ">Get Now   📬</a>
+                              </div>
+                           </div>  -->
+                         <div id="agent-profile-item" class=" bg-white flex justify-between items-center h-36 p-1 shadow-md relative">
+                              <div class="w-[8.5rem]  h-full">
+                                   <img id="agent-listing-image" class="block rounded-md mr-4  w-full h-full object-cover shadow-md bg-[#f97794]" src="./static/agent-2-2.jpg" alt="">
+                              </div>
+                              <div class="mr-auto child: ml-5 h-full pt-1 " >
+                                   <h2 id="agent-listing-house-name" class="text-[.8rem] ml-[.1rem] font-bold text-gray-500 mb-2 ">Aurora House</h2>
+                                   <div class="flex w-fit items-center">
+                                        <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-user-line"></i></span>
+                                        <p id="agent-listing-name" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Austin Fammer</p>
+                                   </div>
+                                   <div class="flex w-fit items-center mb-2.5 ">
+                                        <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-map-pin-line"></i></span>
+                                        <p id="agent-listing-location" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Washinton DC, USA</p>
+                                   </div>
+                                   <a href="./home_info.html" id="agent-listing-btn" class="text-[.8rem] grid items-center text-center  font-[600] text-white/90 px-[.46rem] py-[.2rem] bg-gray-300 shadow-md rounded-[.5rem] w-[6rem] h-[2.05rem] absolute bottom-[13%]  ">Get Now   📬</a>
                               </div>
                          </div>
-                         <div id="agent-profile-item" class=" bg-white flex justify-between items-center h-36 p-1 shadow-xl">
-                              <div class="w-[8rem]  h-full">
-                                   <img id="agent-listing-image" class="block rounded-md  w-full h-full object-cover shadow-md" src="./static/agent-2-2.jpg" alt="">
+                         <div id="agent-profile-item" class=" bg-white flex justify-between items-center h-36 p-1 shadow-md relative">
+                              <div class="w-[8.5rem]  h-full">
+                                   <img id="agent-listing-image" class="block rounded-md mr-4  w-full h-full object-cover shadow-md bg-[#f97794]" src="./static/agent-2-2.jpg" alt="">
                               </div>
-                              <div class="mr-auto child: ml-7 h-full pt-1 " >
+                              <div class="mr-auto child: ml-5 h-full pt-1 " >
                                    <h2 id="agent-listing-house-name" class="text-[.8rem] ml-[.1rem] font-bold text-gray-500 mb-2 ">Aurora House</h2>
                                    <div class="flex w-fit items-center">
                                         <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-user-line"></i></span>
@@ -96,14 +148,14 @@
                                         <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-map-pin-line"></i></span>
                                         <p id="agent-listing-location" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Washinton DC, USA</p>
                                    </div>
-                                   <a href="./home_info.html" id="agent-listing-btn" class="text-[.58rem]  font-[600] text-white/90 px-[.46rem] py-[.2rem] bg-gray-300 shadow-md rounded-md w-[5rem] ">Get Now   📬</a>
+                                   <a href="./home_info.html" id="agent-listing-btn" class="text-[.8rem] grid items-center text-center  font-[600] text-white/90 px-[.46rem] py-[.2rem] bg-gray-300 shadow-md rounded-[.5rem] w-[6rem] h-[2.05rem] absolute bottom-[13%]  ">Get Now   📬</a>
                               </div>
                          </div>
-                         <div id="agent-profile-item" class=" bg-white flex justify-between items-center h-36 p-1 shadow-xl">
-                              <div class="w-[8rem]  h-full">
-                                   <img id="agent-listing-image" class="block rounded-md  w-full h-full object-cover shadow-md" src="./static/agent-2-2.jpg" alt="">
+                         <div id="agent-profile-item" class=" bg-white flex justify-between items-center h-36 p-1 shadow-md relative">
+                              <div class="w-[8.5rem]  h-full">
+                                   <img id="agent-listing-image" class="block rounded-md mr-4  w-full h-full object-cover shadow-md bg-[#f97794]" src="./static/agent-2-2.jpg" alt="">
                               </div>
-                              <div class="mr-auto child: ml-7 h-full pt-1 " >
+                              <div class="mr-auto child: ml-5 h-full pt-1 " >
                                    <h2 id="agent-listing-house-name" class="text-[.8rem] ml-[.1rem] font-bold text-gray-500 mb-2 ">Aurora House</h2>
                                    <div class="flex w-fit items-center">
                                         <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-user-line"></i></span>
@@ -113,13 +165,14 @@
                                         <span class="content-box mr-1 "><i class="text-[0.8rem] p-[.18rem] text-gray-500 bg-gray-100 rounded-xl ri-map-pin-line"></i></span>
                                         <p id="agent-listing-location" class="text-[.58rem]  font-[600] text-gray-700 tracking-wider ">Washinton DC, USA</p>
                                    </div>
-                                   <a href="./home_info.html" id="agent-listing-btn" class="text-[.58rem]  font-[600] text-white/90 px-[.46rem] py-[.2rem] bg-gray-300 shadow-md rounded-md w-[5rem] ">Get Now   📬</a>
+                                   <a href="./home_info.html" id="agent-listing-btn" class="text-[.8rem] grid items-center text-center  font-[600] text-white/90 px-[.46rem] py-[.2rem] bg-gray-300 shadow-md rounded-[.5rem] w-[6rem] h-[2.05rem] absolute bottom-[13%]  ">Get Now   📬</a>
                               </div>
                          </div>
                     </div>
                </div>
           </main>
      </div>
+     <p class=" hidden sm:block text-gray-500 text-center text-[3rem] font-bold mt-[8rem] "> I am still working on it.</p>
      <script type="module" src="index.js"></script>
 
 </body>
