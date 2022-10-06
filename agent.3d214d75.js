@@ -566,11 +566,15 @@ function animationOnce(cover) {
     }).from(word, {
         autoAlpha: 0,
         duration: 2.3
-    }, "+=.2").to(cover, {
+    }, "+=.2").to(word, {
+        autoAlpha: 0,
+        duration: 1,
+        delay: 3
+    }).to(cover, {
         clipPath: "inset(0 100% 0 0)",
         duration: .7,
         ease: "power4.out"
-    }, "+=3").from(homeLogo, {
+    }).from(homeLogo, {
         yPercent: 100,
         duration: 1
     }).set(logo, {
@@ -593,11 +597,15 @@ function animationOnceImage(cover) {
     }).from(word, {
         autoAlpha: 0,
         duration: 2.3
-    }, "+=.2").to(pageCover, {
+    }, "+=.2").to(word, {
+        autoAlpha: 0,
+        duration: 1,
+        delay: 2
+    }).to(pageCover, {
         clipPath: "inset(0 100% 0 0)",
         duration: .7,
         ease: "power4.out"
-    }, "+=3").from(image, {
+    }).from(image, {
         scale: 1.5,
         duration: 1.8,
         ease: "power3.out"
@@ -621,11 +629,15 @@ function animationEnterImage(cover) {
     }).from(word, {
         autoAlpha: 0,
         duration: 1.3
-    }, "+=.2").to(pageCover, {
+    }, "+=.2").to(word, {
+        autoAlpha: 0,
+        duration: 1,
+        delay: 2
+    }).to(pageCover, {
         clipPath: "inset(0 0 0 100%)",
         duration: .7,
         ease: "Expo.easeInOut"
-    }, "+=2").from(image, {
+    }).from(image, {
         scale: 1.5,
         duration: 1.8,
         ease: "power3.out"
@@ -647,11 +659,15 @@ function animationEnter(cover) {
     }).from(word, {
         autoAlpha: 0,
         duration: 1.3
-    }, "+=.2").to(cover, {
+    }, "+=.2").to(word, {
+        autoAlpha: 0,
+        duration: 1,
+        delay: 2
+    }).to(cover, {
         clipPath: "inset(0 0 0 100%)",
         duration: .7,
         ease: "Expo.easeInOut"
-    }, "+=2").set(logo, {
+    }).set(logo, {
         autoAlpha: 0
     }, "+=1").set(word, {
         autoAlpha: 0
@@ -5590,7 +5606,7 @@ function populateCard(info) {
         const bedNo = item.querySelector("#room_no");
         const landSize = item.querySelector("#house_size");
         name.textContent = info[index].agent_listings[z].house_name;
-        price.textContent = info[index].agent_listings[z].house_price;
+        price.textContent = `$${info[index].agent_listings[z].house_price}`;
         img.setAttribute("src", `${info[index].agent_listings[z].house_image}.jpg`);
         landSize.textContent = `${info[index].agent_listings[z].house_land_size}`;
         powerTime.textContent = info[index].agent_listings[z].light_time;
